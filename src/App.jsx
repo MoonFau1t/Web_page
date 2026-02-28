@@ -47,22 +47,29 @@ export default function App() {
       <main className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="text-center sm:text-left space-y-6 mb-24">
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight">
-            Hi, I'm <span className="text-blue-600">Adrian</span>.
+            Hi, I'm <span className="text-blue-600">Adrian Sui</span>.
           </h1>
           <p className={`text-lg sm:text-xl max-w-2xl ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
             I'm a developer building things for the web. This is my digital garden where I share my projects and what I'm learning.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
-            <a href="#" className="flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-transform hover:-translate-y-0.5">
-              <Mail size={18} /> Contact Me
+  
+            {/* 1. Contact Button (Now showing your email directly!) */}
+            <a href="mailto:bingheng.sui@outlook.com" className="flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-transform hover:-translate-y-0.5">
+              <Mail size={18} /> bingheng.sui@outlook.com
             </a>
-            <a href="#" className={`flex items-center gap-2 px-6 py-3 rounded-lg border font-medium transition-colors ${darkMode ? 'border-slate-700 hover:bg-slate-800' : 'border-slate-300 hover:bg-white'}`}>
+  
+            {/* 2. GitHub Button */}
+            <a href="https://github.com/MoonFau1t" target="_blank" rel="noreferrer" className={`flex items-center gap-2 px-6 py-3 rounded-lg border font-medium transition-colors ${darkMode ? 'border-slate-700 hover:bg-slate-800' : 'border-slate-300 hover:bg-white'}`}>
               <Github size={18} /> GitHub
             </a>
-            <a href="#" className={`flex items-center gap-2 px-6 py-3 rounded-lg border font-medium transition-colors ${darkMode ? 'border-slate-700 hover:bg-slate-800' : 'border-slate-300 hover:bg-white'}`}>
+  
+            {/* 3. LinkedIn Button */}
+            <a href="https://www.linkedin.com/in/bingheng-sui-90713426a/" target="_blank" rel="noreferrer" className={`flex items-center gap-2 px-6 py-3 rounded-lg border font-medium transition-colors ${darkMode ? 'border-slate-700 hover:bg-slate-800' : 'border-slate-300 hover:bg-white'}`}>
               <Linkedin size={18} /> LinkedIn
             </a>
+
           </div>
         </div>
 
