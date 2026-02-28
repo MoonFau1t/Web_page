@@ -12,11 +12,11 @@ export default function App() {
   // Placeholder data for projects
   const [projects] = useState([
     {
-      id: 1,
-      title: "Project Placeholder 1",
-      description: "This is where your first project description will go. You can talk about the tech stack and what you learned.",
-      tags: ["React", "CSS", "Demo"],
-      link: "#"
+    id: 1,
+    title: "History inspiration",
+    description: "how the collective memory of Chernobyl catalyzed Ukraine’s decision to leave the Soviet Union",
+    tags: ["History", "Research", "Essay"], // I updated these tags for you, but you can change them to anything!
+    link: "#"
     },
   ]);
 
